@@ -1,0 +1,478 @@
+
+/* ========================================
+   1. ROOT VARIABLES
+======================================== */
+
+:root {
+    --navy: #0b3564;
+    --gold: #d5ad48;
+    --ink: #263445;
+    --muted: #64748b;
+    --paper: #f5f7fa;
+}
+
+
+/* ========================================
+   2. GENERAL STYLES
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    line-height: 1.65;
+}
+
+a {
+    color: var(--navy);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b18a2f;
+}
+
+
+/* ========================================
+   3. HEADER AND NAVIGATION
+======================================== */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #fff;
+    box-shadow: 0 2px 14px #0b254015;
+}
+
+.nav-wrap {
+    max-width: 1180px;
+    margin: auto;
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* SCHOOL LOGO AND NAME */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 1.02rem;
+    line-height: 1.15;
+}
+
+.brand img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+}
+
+.brand span small {
+    display: block;
+    font-size: .68rem;
+    letter-spacing: .08em;
+    color: #667;
+}
+
+
+/* NAVIGATION LINKS */
+
+nav {
+    display: flex;
+    gap: 17px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    font-size: .9rem;
+    font-weight: 700;
+    padding: 8px 0;
+}
+
+nav a.active,
+nav a:hover {
+    color: #b18a2f;
+}
+
+
+/* MOBILE MENU BUTTON */
+
+.menu-toggle {
+    display: none;
+    border: 0;
+    background: var(--navy);
+    color: white;
+    padding: 9px 12px;
+    border-radius: 6px;
+}
+
+
+/* ========================================
+   4. HERO SECTION
+======================================== */
+
+.hero {
+    background:
+        linear-gradient(90deg, #061d38dc, #082b5570),
+        url('../img/campus-aerial.jpg') center/cover;
+
+    min-height: 490px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-inner,
+.container {
+    width: min(1120px, calc(100% - 40px));
+    margin: auto;
+}
+
+.hero-copy {
+    max-width: 720px;
+    padding: 78px 0;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+
+/* HERO TEXT */
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    color: var(--navy);
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.7rem);
+    color: white;
+    margin: 12px 0;
+}
+
+.hero p {
+    font-size: 1.12rem;
+    max-width: 650px;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 12px 22px;
+    border-radius: 5px;
+    font-weight: 800;
+    margin: 8px 8px 0 0;
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* ========================================
+   5. PAGE HERO
+======================================== */
+
+.page-hero {
+    background: linear-gradient(120deg, #082b55, #174b7c);
+    color: white;
+    padding: 58px 0;
+}
+
+.page-hero h1 {
+    color: white;
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+}
+
+.page-hero p {
+    margin: 0;
+    max-width: 760px;
+    color: #e7edf5;
+}
+
+
+/* ========================================
+   6. CONTENT SECTIONS
+======================================== */
+
+section.content {
+    padding: 62px 0;
+}
+
+.soft {
+    background: var(--paper);
+}
+
+
+/* SECTION HEADINGS */
+
+.section-head {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 34px;
+}
+
+.section-head h2 {
+    font-size: 2rem;
+    margin: 0 0 12px;
+}
+
+.section-head p {
+    color: var(--muted);
+}
+
+
+/* ========================================
+   7. CARD GRID
+======================================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 8px 28px #0b254010;
+    border-top: 4px solid var(--gold);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    color: #596779;
+}
+
+
+/* ========================================
+   8. SPLIT LAYOUT AND IMAGES
+======================================== */
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    align-items: center;
+}
+
+
+/* STANDARD IMAGE */
+
+.photo {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px #0b254020;
+}
+
+
+/* TALL IMAGE */
+
+.photo.tall {
+    height: 390px;
+}
+
+
+/* ========================================
+   9. LISTS AND NOTICES
+======================================== */
+
+.list {
+    padding-left: 20px;
+}
+
+.notice {
+    background: #fff8e7;
+    border-left: 4px solid var(--gold);
+    padding: 18px 20px;
+    border-radius: 6px;
+}
+
+
+/* TAG LABEL */
+
+.tag {
+    display: inline-block;
+    background: #f4edda;
+    color: #735817;
+    padding: 4px 10px;
+    border-radius: 30px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   10. IMAGE GALLERY
+======================================== */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+
+/* ========================================
+   11. FOOTER
+======================================== */
+
+.footer {
+    background: #061d38;
+    color: #e6edf6;
+    padding: 38px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer h3 {
+    color: white;
+}
+
+.footer a {
+    color: #e6edf6;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    border-top: 1px solid #ffffff25;
+    margin-top: 25px;
+    padding-top: 16px;
+    font-size: .9rem;
+    color: #c5d0dc;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-lines p {
+    margin: 7px 0;
+}
+
+
+/* ========================================
+   12. TABLET RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 850px) {
+
+    /* SHOW MOBILE MENU */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* MOBILE NAVIGATION */
+    nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 78px;
+        background: white;
+        padding: 18px 24px;
+        box-shadow: 0 8px 16px #0002;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    /* RESPONSIVE GRID */
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .split {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ========================================
+   13. MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 560px) {
+
+    /* SINGLE COLUMN LAYOUT */
+    .grid,
+    .gallery,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        min-height: 440px;
+    }
+
+    .hero-copy {
+        padding: 55px 0;
+    }
+
+    /* PAGE HEADING */
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    /* GALLERY IMAGES */
+    .gallery img {
+        height: 220px;
+    }
+
+}
