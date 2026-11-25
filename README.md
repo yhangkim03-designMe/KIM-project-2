@@ -90,3 +90,16 @@ The landing page is designed for modern web browsers, including:
 - Safari
 
 The website should be tested on desktop and mobile screen sizes.
+## Project Testing
+
+The following areas are included in the project testing checklist:
+
+- Homepage navigation
+- Internal page links
+- Image loading
+- CSS styling
+- Bootstrap layout
+- Contact page
+- Mobile and desktop layout
+
+Final testing should be performed before deployment.
