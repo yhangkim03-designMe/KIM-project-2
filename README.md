@@ -23,3 +23,14 @@ KIM
 
 ## GitHub Repository
 https://github.com/yhangkim03-designMe/KIM-project-2
+## Website Pages
+
+- index.html - Homepage
+- about.html - About the college
+- courses.html - Academic courses
+- course-details.html - Course details
+- events.html - College events
+- trainers.html - Trainers information
+- contact.html - Contact page
+- pricing.html - Pricing information
+- starter-page.html - Starter template
