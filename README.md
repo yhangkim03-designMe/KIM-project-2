@@ -44,3 +44,14 @@ https://github.com/yhangkim03-designMe/KIM-project-2
 - Contact information
 - Navigation menu
 - Bootstrap-based design
+## Development Technologies
+
+The project uses the following technologies:
+
+- HTML5 for website structure
+- CSS3 for styling and layout
+- Bootstrap for responsive design
+- JavaScript for interactive elements
+- Git for version control
+- GitHub for source code hosting
+- GitHub Pages for website deployment
