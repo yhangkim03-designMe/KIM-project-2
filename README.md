@@ -55,3 +55,16 @@ The project uses the following technologies:
 - Git for version control
 - GitHub for source code hosting
 - GitHub Pages for website deployment
+
+## Image Assets
+
+The project includes image resources used throughout the landing page:
+
+- College logo
+- KCC building image
+- Campus activity photographs
+- College event photographs
+- Student activity images
+- Campus gallery images
+
+All images are stored in the assets/img directory.
