@@ -80,3 +80,13 @@ The landing page uses a Bootstrap-based layout with:
 - Responsive page layout
 
 The design represents the identity of Kabankalan Catholic College, Inc.
+## Browser Compatibility
+
+The landing page is designed for modern web browsers, including:
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Safari
+
+The website should be tested on desktop and mobile screen sizes.
