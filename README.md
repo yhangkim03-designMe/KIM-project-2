@@ -103,3 +103,18 @@ The following areas are included in the project testing checklist:
 - Mobile and desktop layout
 
 Final testing should be performed before deployment.
+## Project Completion
+
+This project presents the landing page of Kabankalan Catholic College, Inc.
+
+The website source code is maintained using Git and hosted on GitHub.
+
+The project is prepared for deployment through GitHub Pages.
+
+## Project Links
+
+GitHub Repository:
+https://github.com/yhangkim03-designMe/KIM-project-2
+
+GitHub Pages:
+https://yhangkim03-designMe.github.io/KIM-project-2/
