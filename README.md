@@ -34,3 +34,13 @@ https://github.com/yhangkim03-designMe/KIM-project-2
 - contact.html - Contact page
 - pricing.html - Pricing information
 - starter-page.html - Starter template
+## Main Website Features
+
+- Responsive homepage layout
+- College introduction and information
+- Academic courses presentation
+- College events and activities
+- Image gallery
+- Contact information
+- Navigation menu
+- Bootstrap-based design
