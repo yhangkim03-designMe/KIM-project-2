@@ -68,3 +68,15 @@ The project includes image resources used throughout the landing page:
 - Campus gallery images
 
 All images are stored in the assets/img directory.
+## Website Design
+
+The landing page uses a Bootstrap-based layout with:
+
+- Navigation menu
+- Hero section
+- Content sections
+- Image presentation
+- Footer section
+- Responsive page layout
+
+The design represents the identity of Kabankalan Catholic College, Inc.
